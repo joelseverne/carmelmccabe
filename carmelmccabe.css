@@ -1,0 +1,267 @@
+/* Contents
+
+1. General
+2. Header
+3. Body
+4. Footer
+5. Media queries
+6. Flex
+7. Additional pages
+
+*/
+
+/* 1. General */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  /* max-width: 90%; */
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFDC1C;
+  font-style: italic;
+}
+
+/* 2. Header */
+
+.header {
+  display: block;
+}
+
+.logo {
+  max-width: 40%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.main-nav ul {
+  padding: 0;
+  display: inline-block;
+}
+
+.main-nav li {
+  margin: 0 auto;
+  justify-content: center;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+
+
+/* 3. Body */
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100vw;
+  display: inline-block;
+  margin: auto;
+  padding: 1.5em 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0 auto;
+}
+
+.tagline {
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  max-width: 90%;
+}
+
+.photo {
+  max-width: 100%;
+  padding-top: 1em;
+}
+
+.link-to-photo-set:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+blockquote {
+  border-top: solid black 1px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.review {
+  text-align: center;
+  font-style: italic;
+}
+
+/* 4. Footer */
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+.social {
+  border-top: solid black 1px;
+  margin: 0 auto;
+  padding: 1.5em;
+
+}
+
+.instagram,
+.facebook,
+.pinterest {
+    max-width: 20%;
+    padding: 1em;
+}
+
+/* 5. Media queries */
+
+@media (min-width: 769px) {
+
+  .Header,
+  .main-nav {
+    display: flex;
+  }
+
+  .Header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  .Header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 10%;
+  }
+
+}
+
+/* 6. Flex rules */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+
+
+/* 7. Additional Pages */
+
+/* Contact Page */
+
+.content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.email {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2em;
+
+}
+
+/* Portfolio Page */
+
+.gallery {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.gallery img {
+  width: 230px;
+  padding: 5px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Blog Page */
+
+.blogTitle {
+  margin: 1em auto;
+  text-align: center;
+}
+
+article {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+article p {
+  max-width: 90%;
+  margin: 1.5em auto;
+}
+
+.img1 {
+  max-width: 100vw;
+  margin: 1em auto;
+}
+
+
+.img2 {
+  max-width:48vw;
+  margin: 1em auto;
+}
+
+.img3 {
+  max-width: 100vw;
+  margin: 0.5 auto;
+}
+
+.img4 {
+  max-width: 31vw;
+  margin: 1.5em auto;
+}
+
+.blogflex {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  }
+
+  .heart {
+    margin-top: 5em;
+  }
+
+  .backToTop {
+    margin: 1.5em auto;
+    text-align: center;
+    max-width: 50%;
+  }
